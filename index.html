@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Form Design</title>
+        <style>
+            .myform{
+                margin: 100px auto;
+                width: 520px;
+                height: 445px;
+                border: 1px solid black;
+                border-radius: 5px;
+                /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
+                background-image: -webkit-linear-gradient(top, #3b3b3b,#373737);
+                font-family: Arial, Helvetica, sans-serif;
+                user-select: none;
+            }
+            .myform > .cacc{
+                height: 77px;
+                line-height: 77px;
+                text-align: center;
+                color: #fff;
+                font-size: 2em;
+                border-bottom: 2px solid #1b1b1b;
+                text-shadow: 0px -2px 1px rgba(0, 0, 0, .5);
+                margin-bottom: 41px;
+
+            }
+            .myform > div > input{
+                display: block;
+                width: 90%;
+                height: 38px;
+                padding-left: 43px;
+                border-radius: 20px;
+                margin: 14px auto;
+                background-image: -webkit-linear-gradient(top, #b1b1b1,#d7d7d7);
+                border: none;
+                box-shadow: 0px 1px 1px 1px #5b595a;
+            }
+            .tnc{
+                font-size: 1em !important;
+                text-align: left !important;
+                color: #fff;
+            }
+            a{
+                color: #959823;
+            }
+            input[type="submit"]{
+                width: 250px;
+                height: 50px;
+                color: #fff;
+                font-size: 2em;
+                float: right;
+                background-image: -webkit-linear-gradient(top, #909419,#717c00);
+                text-shadow: 0px -2px 1px rgba(0, 0, 0, .5);
+                margin-top: 20px;
+                margin-right: 20px;
+                border-radius: 20px;
+                border: none;
+                box-shadow: 0px -1px 0px 0px #b4bd2c;
+            }
+            .box{
+                padding: 0px 20px;
+            }
+            .box > input:focus{
+                outline: none;
+            }
+            .box input:first-child{
+                background-image: url("img/1.gif"),-webkit-linear-gradient(top, #d6d6d6,#d7d7d7);
+                background-repeat: no-repeat,repeat;
+                background-position: 10px 9px;
+            }
+            .box input:nth-child(2){
+                background-image: url("img/2.gif"),-webkit-linear-gradient(top, #d6d6d6,#d7d7d7);
+                background-repeat: no-repeat,repeat;
+                background-position: 10px 7px;
+                
+            }
+            .box input:nth-child(3){
+                background-image: url("img/3.gif"),-webkit-linear-gradient(top, #d6d6d6,#d7d7d7);
+                background-repeat: no-repeat,repeat;
+                background-position: 10px 10px;
+                
+            }
+            .box input:nth-child(4){
+                background-image: url("img/4.png"),-webkit-linear-gradient(top, #d6d6d6,#d7d7d7);
+                background-repeat: no-repeat,repeat;
+                background-position: 10px 7px;
+                
+            }
+        </style>
+    </head>
+    <bdy>
+        <form class="myform">
+            <div class="cacc">Create an Account</div>
+            <div class="box">
+                <input type="text" name="fname" placeholder="Name">
+                <input type="number" name="phonenumber" placeholder="Phone Number">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                
+                <label>
+                    <input type="checkbox">
+                    <span class="tnc">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></span>
+                </label>
+            </div>
+            
+            <input type="submit" name="submit" value="Create Account"></input>
+            
+        </form>
+        
+    </body>
+</html>
